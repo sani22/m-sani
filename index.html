@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2196F3">
+    <meta name="description" content="Modern Mobile Web App">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    
+    <title>Mobile Web App</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- App Container -->
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">
+                    <span class="material-icons">smartphone</span>
+                    Mobile App
+                </h1>
+                <button class="menu-btn" id="menuBtn">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav" id="nav">
+            <a href="#home" class="nav-item active" data-page="home">
+                <span class="material-icons">home</span>
+                <span>Home</span>
+            </a>
+            <a href="#features" class="nav-item" data-page="features">
+                <span class="material-icons">star</span>
+                <span>Features</span>
+            </a>
+            <a href="#settings" class="nav-item" data-page="settings">
+                <span class="material-icons">settings</span>
+                <span>Settings</span>
+            </a>
+            <a href="#about" class="nav-item" data-page="about">
+                <span class="material-icons">info</span>
+                <span>About</span>
+            </a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Home Page -->
+            <section id="home" class="page active">
+                <div class="hero">
+                    <h2>Welcome to Your Mobile App</h2>
+                    <p>A beautiful, responsive web application built for mobile devices</p>
+                    <button class="btn btn-primary" id="installBtn">
+                        <span class="material-icons">get_app</span>
+                        Install App
+                    </button>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <span class="material-icons">speed</span>
+                        </div>
+                        <h3>Fast Performance</h3>
+                        <p>Optimized for mobile devices with lightning-fast loading times</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <span class="material-icons">offline_bolt</span>
+                        </div>
+                        <h3>Works Offline</h3>
+                        <p>Continue using the app even when you're not connected to the internet</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <span class="material-icons">responsive</span>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Perfect experience across all screen sizes and orientations</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Page -->
+            <section id="features" class="page">
+                <h2>Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <span class="material-icons">touch_app</span>
+                        <div>
+                            <h3>Touch Optimized</h3>
+                            <p>Designed for touch interactions with proper tap targets</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="material-icons">palette</span>
+                        <div>
+                            <h3>Material Design</h3>
+                            <p>Beautiful UI following Google's Material Design principles</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="material-icons">security</span>
+                        <div>
+                            <h3>Secure</h3>
+                            <p>HTTPS enabled with secure data handling</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="material-icons">notifications</span>
+                        <div>
+                            <h3>Push Notifications</h3>
+                            <p>Stay updated with important information</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings Page -->
+            <section id="settings" class="page">
+                <h2>Settings</h2>
+                <div class="settings-list">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <span class="material-icons">dark_mode</span>
+                            <div>
+                                <h3>Dark Mode</h3>
+                                <p>Switch between light and dark themes</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <span class="material-icons">notifications</span>
+                            <div>
+                                <h3>Notifications</h3>
+                                <p>Enable push notifications</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="notificationsToggle" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <span class="material-icons">language</span>
+                            <div>
+                                <h3>Language</h3>
+                                <p>Choose your preferred language</p>
+                            </div>
+                        </div>
+                        <select class="select">
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                            <option>German</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Page -->
+            <section id="about" class="page">
+                <h2>About</h2>
+                <div class="about-content">
+                    <div class="app-info">
+                        <div class="app-logo">
+                            <span class="material-icons">smartphone</span>
+                        </div>
+                        <h3>Mobile Web App</h3>
+                        <p class="version">Version 1.0.0</p>
+                        <p class="description">
+                            A modern, responsive web application built specifically for mobile devices. 
+                            Features include offline functionality, push notifications, and a beautiful 
+                            Material Design interface.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Contact</h3>
+                        <div class="contact-item">
+                            <span class="material-icons">email</span>
+                            <span>support@mobileapp.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="material-icons">web</span>
+                            <span>www.mobileapp.com</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

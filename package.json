@@ -1,0 +1,38 @@
+{
+  "name": "mobile-web-app",
+  "version": "1.0.0",
+  "description": "A modern, responsive web application built specifically for Android mobile devices",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -c-1",
+    "dev": "npx http-server . -p 8080 -c-1 -o",
+    "build": "echo 'No build process needed for vanilla HTML/CSS/JS'",
+    "test": "echo 'No tests specified'",
+    "serve": "python3 -m http.server 8080",
+    "serve-py": "python -m SimpleHTTPServer 8080"
+  },
+  "keywords": [
+    "mobile",
+    "pwa",
+    "android",
+    "web-app",
+    "responsive",
+    "material-design"
+  ],
+  "author": "Mobile App Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/mobile-web-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/mobile-web-app/issues"
+  },
+  "homepage": "https://github.com/your-username/mobile-web-app#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
