@@ -1,0 +1,26 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#gradient)" stroke="#fff" stroke-width="8"/>
+  
+  <!-- Phone icon -->
+  <rect x="200" y="120" width="112" height="192" rx="16" ry="16" fill="#fff" stroke="none"/>
+  <rect x="212" y="140" width="88" height="120" rx="4" ry="4" fill="#2196F3"/>
+  <circle cx="256" cy="284" r="12" fill="#fff"/>
+  
+  <!-- Signal bars -->
+  <rect x="220" y="160" width="8" height="20" fill="#fff" opacity="0.8"/>
+  <rect x="232" y="155" width="8" height="25" fill="#fff" opacity="0.8"/>
+  <rect x="244" y="150" width="8" height="30" fill="#fff" opacity="0.8"/>
+  <rect x="256" y="145" width="8" height="35" fill="#fff"/>
+  
+  <!-- WiFi symbol -->
+  <path d="M 270 170 Q 280 165 290 170 Q 285 175 280 175 Q 275 175 270 170" fill="#fff" opacity="0.8"/>
+  <path d="M 268 172 Q 282 162 296 172 Q 290 178 282 178 Q 274 178 268 172" fill="#fff" opacity="0.6"/>
+</svg>
